@@ -1,0 +1,33 @@
+! urxvt config
+URxvt.geometry: 120x78
+URxvt.iconFile: /usr/share/icons/gnome/scalable/apps/utilities-terminal-symbolic.svg
+URxvt.font: xft:DejaVu Sans Mono:size=8
+!URxvt.loginShell: true
+URxvt.scrollstyle: plain
+URxvt.depth: 32
+URxvt.letterSpace: -1
+
+! extensions
+URxvt.perl-ext-common: default,url-select,clipboard,font-size
+
+! url select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
+! clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.autocopy: true
+
+! font size on the fly
+URxvt.keysym.C-Up: perl:font-size:increase
+URxvt.keysym.C-Down: perl:font-size:decrease
+
+! fast scrolling
+URxvt.jumpScroll: true
+
+! slim scrollbar
+URxvt.thickness: 3
+

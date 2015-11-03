@@ -1,0 +1,3 @@
+! simple switch to another color theme
+#include "color-theme-solarized"
+

@@ -1,0 +1,3 @@
+#include ".Xresources.d/URxvt"
+#include ".Xresources.d/terminal-color-theme"
+
